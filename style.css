@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    word-wrap: wrap;
+}
+#watch{
+    background: linear-gradient(140deg, #2333c0, #840788,#0ebcd3, #fc4bf0);  
+}
+#watch .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh; 
+}
+
+#watch .box, #watch .sec{
+    width:250px;
+    height:180px;
+    color:#ffffff;
+    backdrop-filter: blur(50px);
+    background: #79767160;
+    text-align:center;
+    line-height: 190px;
+    font-weight:bold;
+    font-size: 75px;
+    position: relative;
+    
+    
+} 
+#watch .box::after{
+    content: ":";
+    position: absolute;
+    right:0;
+    top:0;
+}
